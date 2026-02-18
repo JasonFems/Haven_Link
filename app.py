@@ -25,7 +25,7 @@ if st.button("Predict Price"):
     
     # REACH INTO THE BOX: This is the most important part!
     # We take the first answer out of the prediction list
-    final_price = float(prediction)
+    final_price = float(prediction[0])
     
     # Show the answer
     st.success(f"The estimated price is: ₦{final_price:,.2f}")
