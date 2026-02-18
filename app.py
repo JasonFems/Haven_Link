@@ -1,7 +1,7 @@
 
-  import streamlit as st
-  import pandas as pd
-  import joblib
+import streamlit as st
+import pandas as pd
+import joblib
 
 # 1. Load the robot's brain that was saved earlier
 model = joblib.load('house_model_pkl')
