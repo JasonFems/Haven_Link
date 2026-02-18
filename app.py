@@ -23,5 +23,6 @@ if st.button("Predict Price"):
   # Ask the robot to guess
   prediction = model.predict(clues)
 
-  # Show thw answer in big green text
-  st.success(f"The estimated price of this house is: ₦{float(prediction):,.2f}")
+  # Use to reach into the box and get the number out
+  show_price = float(prediction)
+  st.success(f"The estimated price of this house is: ₦{show_price:,.2f}")
