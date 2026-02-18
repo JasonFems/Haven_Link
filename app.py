@@ -3,7 +3,7 @@ import joblib
 import pandas as pd
 
 # 1. Load the robot's brain
-model = joblib.load('house_model.pkl')
+model = joblib.load('house_model_pkl')
 
 # 2. Make the website look pretty
 st.title("🇳🇬 My Nigerian House Price Robot")
