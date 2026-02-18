@@ -20,8 +20,8 @@ if st.button("Predict Price"):
   # Put the numbers into a tiny table for the robot
   clues = pd.DataFrame([[bedrooms, bathrooms, toilets]], columns=['bedrooms', 'bathrooms', 'toilets'])
 
-  @ Ask the robot to guess
+  # Ask the robot to guess
   prediction = model.predict(clues)
 
-  @ Show thw answer in big green text
+  # Show thw answer in big green text
   st.success(f"The estimated price of this house is: ₦{float(prediction):,.2f}")
